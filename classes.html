@@ -1,279 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
     <title>Bryan Lopez</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
 
-        <!-- Name Header -->
+    <div class="container">
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-12 text-center">
-                    <a class="blog-header-logo text-dark" href="https://blopez24.github.io">Bryan Lopez</a>
+                <div class="text-center">
+                    <a class="blog-header-logo text-dark" href="index.html">Bryan Lopez</a>
                 </div>
             </div>
         </header>
 
-        <!-- Navigation Header -->
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="resume.html">Resume</a>
-                <a class="p-2 text-muted" href="projects.html">Projects</a>
-                <a class="p-2 text-muted" href="classes.html">Classes</a>
-                <a class="p-2 text-muted" href="about.html">About Me</a>
-                <a class="p-2 text-muted" href="contact.html">Contact</a>
+                <a class="p-2 link-secondary" href="about.html">About Me</a>
+                <a class="p-2 link-secondary" href="resume.html">Resume</a>
+                <a class="p-2 link-secondary" href="projects.html">Projects</a>
+                <a class="p-2 link-secondary" href="classes.html">Classes</a>
+                <a class="p-2 link-secondary" href="contact.html">Contact</a>
             </nav>
         </div>
+    </div>
 
-        <!-- Courses -->
-        <div>
-            <!-- Year 1 -->
-            <section class="container rounded my-3 p-3 bg-dark text-white">
-                <h2 class=" text-center">Year 1 - Freshman</h2>
-                <hr class="bg-light">
-                <ul class="list-unstyled">
-                    <li class="m-2">
-                        <strong>
-                            CMPS 5J - Introduction to Programming in Java
-                        </strong>
-                        <br>Introduces programming in Java for students who have no prior programming experience.
-                        Students learn programming and documentation skills, as well as algorithmic problem-solving,
-                        and programming methodologies. Introduces computers, compilers, and editors. Students write
-                        small to medium-sized programs.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CMPS 11 - Intermediate Programming
-                        </strong>
-                        <br>Continuation of course 5J. Covers basic object-oriented programming, event-driven
-                        programming, graphical user interface (GUI) creation, recursion, two-dimensional
-                        arrays.</br>
-                    </li>
-                </ul>
-            </section>
-            <!-- Year 2 -->
-            <section class="container rounded my-3 p-3 bg-light text-dark">
-                <h2 class="text-center">Year 2 - Sophmore</h2>
-                <hr class="bg-dark">
-                <ul class="list-unstyled">
-                    <li class="m-2">
-                        <strong>
-                            CMPE12 - Computer Systems and Assembly Language
-                        </strong>
-                        <br>Introduction to computer systems and assembly language and how computers compute in
-                        hardware
-                        and software. Topics include digital logic, number systems, data structures,
-                        compiling/assembly
-                        process, basics of system software, and computer architecture. </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CMPE16 - Applied Discrete Mathematic
-                        </strong>
-                        <br>Introduction to applications of discrete mathematical systems. Topics include sets,
-                        functions, relations, graphs, predicate calculus, mathematical proof methods (induction,
-                        contraposition, contradiction), counting methods (permutations, combinations), and
-                        recurrences.
-                        </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CMPE107 - Probability and Statistics for Engineers
-                        </strong>
-                        <br>Introduction to fundamental tools of stochastic analysis. Probability, conditional
-                        probability; Bayes Theorem; random variables and transforms; independence; Bernnoulli
-                        trials.
-                        Statistics, inference from limited data; outcomes of repeated experiments; applications to
-                        design; assessment of relative frequency and probability; law of large numbers; precision of
-                        measurements. Elements of stochastic processes, Poisson processes; Markov chains. </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CMPS12B - Introduction to Data Structures
-                        </strong>
-                        <br>Teaches students to implement common data structures and the algorithms associated with
-                        each
-                        data structure, through progressively difficult exercises. Topics include big "O" notation;
-                        pointers, recursion (induction), and dynamic allocation; linked lists and list processing;
-                        stacks, queues, binary trees and binary search trees; simple sorting techniques and simple
-                        search techniques. Students will gain a working knowledge of the elements of the Java and C
-                        programming languages.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CMPS12M - Data Structures Laboratory
-                        </strong>
-                        <br>Complements course 12B, gaining additional competence with a number of important
-                        software
-                        development tools, languages, and techniques. Included are advanced Unix features and
-                        utilities
-                        such as grep, find, diff, the shell, and pipes; C programs utilizing I/O, arrays, pointers,
-                        and
-                        structures; a scripting language to perform simple text and file manipulation; and the make
-                        utility.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CMPS101 - Algorithms and Abstract Data Types
-                        </strong>
-                        <br>Studies basic algorithms and their relationships to common abstract data types. Covers
-                        the
-                        notions of abstract data types and the distinction between an abstract data type and an
-                        implementation of that data type. The complexity analysis of common algorithms using
-                        asymptotic
-                        (big "O") notation is emphasized. Topics include sorting and searching techniques, basic
-                        graph
-                        algorithms, and algorithm design techniques. Abstract data types covered include priority
-                        queues, dictionaries, disjoint sets, heaps, balanced trees, and hashing. </br>
-                    </li>
+    <!-- Classes taken at UCSC -->
+    <main class="container">
+        <!-- First Year Classes -->
+        <div class="p-4 mb-4 text-white rounded bg-dark">
+            <h3 class="text-center">Year 1 - Freshman</h3>
+            <hr class="">
+            <strong>CMPS 5J - Introduction to Programming in Java</strong> <br>
+            <p>Introduces programming in Java for students who have no prior programming experience. Students learn
+                programming and documentation skills, as well as algorithmic problem-solving, and programming
+                methodologies. Introduces computers, compilers, and editors. Students write small to medium-sized
+                programs.</p>
+            <strong>CMPS 11 - Intermediate Programming </strong> <br>
+            <p>Continuation of course 5J. Covers basic object-oriented programming, event-driven programming, graphical
+                user interface (GUI) creation, recursion, two-dimensional arrays.</p>
+        </div>
 
-                </ul>
-            </section>
-            <!-- Year 3 -->
-            <section class="container rounded my-3 p-3 bg-dark text-white">
-                <h2 class=" text-center">Year 3 - Junior</h2>
-                <hr class="bg-light">
-                <ul class="list-unstyled">
-                    <li class="m-2">
-                        <strong>
-                            CSE20 - Beginning Programming in Python
-                        </strong>
-                        <br>The course provides students with Python programming skills and ability to design
-                        programs and read Python code. Topics include data types, control flow, methods and advanced
-                        functions, built-in data structures, and introduction to OOP. </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE80N - Introduction to Networking and the Internet
-                        </strong>
-                        <br>Introduction to the evolution, technological basis, and services of the Internet, with
-                        descriptions of its underlying communications structure, routing algorithms, peer-to-peer
-                        hierarchy, reliability, and packet switching. Network security, mail, multimedia and data
-                        compression issues, HTML, and digital images. </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE103 - Computational Models
-                        </strong>
-                        <br>Various representations for regular languages, context-free grammars, normal forms,
-                        simple parsing, pumping lemmas, Turing machines, the Church-Turing thesis, intractable
-                        problems, the P-NP question.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE112 - Comparative Programming Language
-                        </strong>
-                        <br>Covers several programming languages and compares styles, philosophy, and design
-                        principles. Principles underlying declarative, functional, and object-oriented programming
-                        styles are studied. Students write programs emphasizing each of these techniques. </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE118 - Mobile Applications
-                        </strong>
-                        <br>Introduces programming and application development for mobile devices. Covers the SDK
-                        and main programming platforms available on mobile devices, methodologies for developing
-                        native applications, division of computation between the mobile platform and servers, and
-                        mobile-to-server communications. Introduces platforms based on JavaScript and HTML5 for the
-                        development of applications that are portable across platforms. Students develop components
-                        of applications, leading to fully functional applications by the end of the course. </br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE120 - Computer Architecture
-                        </strong>
-                        <br>Introduction to computer architecture including examples of current approaches and the
-                        effect of technology and software. Computer performance evaluation, basic combinatorial and
-                        sequential digital components, different instruction set architectures with a focus on the
-                        MIPS ISA and RISC paradigm. Evolution of CPU microarchitecture from single-cycle to
-                        multi-cycle pipelines, with overview of super-scalar, multiple-issue and VLIW. Memory
-                        system, cache, virtual memory and relationship between memory and performance. Evolution of
-                        PC system architecture. May include advanced topics, such as parallel processing, MIMD, and
-                        SIMD.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE146 - Ethics & Algorithms
-                        </strong>
-                        <br>This course provides an introduction to data-driven and algorithmic decision making, and
-                        ethical frameworks for evaluating automated systems. There will be an emphasis on
-                        algorithmic literacy, critical analysis, and fundamental limitations of automated decision
-                        making. We will cover concepts including predictive and causal modeling. We will discuss
-                        bias, fairness, interpretability, privacy, and accountability. Finally we will discuss
-                        notions of autonomy and algorithmic auditing.</br>
-                    </li>
-                </ul>
-            </section>
-            <!-- Year 4 -->
-            <section class="container rounded my-3 p-3 bg-light text-dark">
-                <h2 class="text-center">Year 4 - Senior</h2>
-                <hr class="bg-dark">
-                <ul class="list-unstyled">
-                    <li class="m-2">
-                        <strong>
-                            CSE 140 - Artificial Intelligence
-                        </strong>
-                        <br>Introduction to the contemporary concepts and techniques of artificial intelligence,
-                        including any or all of: machine perception and inference, machine learning, optimization
-                        problems, computational methods and models of search, game playing and theorem proving.
-                        Emphasis may be on any formal method of perceiving, learning, reasoning, and problem solving
-                        which proves to be effective. This includes both symbolic and neural network approaches to
-                        artificial intelligence. Issues discussed include symbolic versus nonsymbolic methods, local
-                        versus global methods, hierarchical organization and control, and brain modeling versus
-                        engineering approaches. Lisp or Prolog may be introduced. Involves one major project or
-                        regular programming assignments.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE 180 - Database Systems I
-                        </strong>
-                        <br>Introduction to the concepts, approaches, tools, and methodology of database design.
-                        Covers the entity-relationship model, the relational model, relational algebra, relational
-                        calculus, commercial languages (such as SQL and QBE), functional dependencies, normal forms,
-                        and design theory. Other topics may include knowledge-bases, constraint databases, and
-                        alternative database models.</br>
-                    </li>
-                    <li class="m-2">
-                        <strong>
-                            CSE 183 - Web Applications
-                        </strong>
-                        <br>The World-Wde Web is one of the main mechanisms by which computer applications are
-                        delivered to users. This course introduces the design of Web applications. Students learn
-                        the main technologies involved, and build web applications as part of homework assignments
-                        and group class projects.</br>
-                    </li>
-                </ul>
-            </section>
+        <!-- Second Year Classes -->
+        <div class="p-4 mb-4 text-dark rounded bg-light">
+            <h3 class="text-center">Year 2 - Sophmore</h3>
+            <hr>
+            <strong>CMPE 12 - Computer Systems and Assembly Language </strong> <br>
+            <p>Introduction to computer systems and assembly language and how computers compute in hardware and
+                software. Topics include digital logic, number systems, data structures, compiling/assembly process,
+                basics of system software, and computer architecture.
+            </p>
+            <strong>CMPE 16 - Applied Discrete Mathematic </strong> <br>
+            <p>Introduction to applications of discrete mathematical systems. Topics include sets, functions, relations,
+                graphs, predicate calculus, mathematical proof methods (induction, contraposition, contradiction),
+                counting methods (permutations, combinations), and recurrences.
+            </p>
+            <strong>CMPE 107 - Probability and Statistics for Engineers</strong> <br>
+            <p>Introduction to fundamental tools of stochastic analysis. Probability, conditional probability; Bayes
+                Theorem; random variables and transforms; independence; Bernnoulli trials. Statistics, inference from
+                limited data; outcomes of repeated experiments; applications to design; assessment of relative frequency
+                and probability; law of large numbers; precision of measurements. Elements of stochastic processes,
+                Poisson processes; Markov chains.
+            </p>
+            <strong>CMPS 12B - Introduction to Data Structures </strong> <br>
+            <p>Teaches students to implement common data structures and the algorithms associated with each data
+                structure, through progressively difficult exercises. Topics include big "O" notation; pointers,
+                recursion (induction), and dynamic allocation; linked lists and list processing; stacks, queues, binary
+                trees and binary search trees; simple sorting techniques and simple search techniques. Students will
+                gain a working knowledge of the elements of the Java and C programming languages
+            </p>
+            <strong>CMPS 12M - Data Structures Laboratory</strong> <br>
+            <p>Complements course 12B, gaining additional competence with a number of important software development
+                tools, languages, and techniques. Included are advanced Unix features and utilities such as grep, find,
+                diff, the shell, and pipes; C programs utilizing I/O, arrays, pointers, and structures; a scripting
+                language to perform simple text and file manipulation; and the make utility.
+            </p>
+            <strong>CMPS 101 - Algorithms and Abstract Data Types</strong> <br>
+            <p>Studies basic algorithms and their relationships to common abstract data types. Covers the notions of
+                abstract data types and the distinction between an abstract data type and an implementation of that data
+                type. The complexity analysis of common algorithms using asymptotic (big "O") notation is emphasized.
+                Topics include sorting and searching techniques, basic graph algorithms, and algorithm design
+                techniques. Abstract data types covered include priority queues, dictionaries, disjoint sets, heaps,
+                balanced trees, and hashing.
+            </p>
+        </div>
+
+        <!-- Third Year Classes -->
+        <div class="p-4 mb-4 text-white rounded bg-dark">
+            <h3 class="text-center">Year 3 - Junior</h3>
+            <hr>
+            <strong>CSE 20 - Beginning Programming in Python</strong> <br>
+            <p>The course provides students with Python programming skills and ability to design programs and read
+                Python code. Topics include data types, control flow, methods and advanced functions, built-in data
+                structures, and introduction to OOP.</p>
+            <strong>CSE 80N - Introduction to Networking and the Internet</strong> <br>
+            <p>Introduction to the evolution, technological basis, and services of the Internet, with descriptions of
+                its underlying communications structure, routing algorithms, peer-to-peer hierarchy, reliability, and
+                packet switching. Network security, mail, multimedia and data compression issues, HTML, and digital
+                images.
+            </p>
+            <!--  -->
+            <strong>CSE 103 - Computational Models</strong> <br>
+            <p>Various representations for regular languages, context-free grammars, normal forms, simple parsing,
+                pumping lemmas, Turing machines, the Church-Turing thesis, intractable problems, the P-NP question.
+            </p>
+            <strong>CSE 112 - Comparative Programming Language</strong> <br>
+            <p>Covers several programming languages and compares styles, philosophy, and design principles. Principles
+                underlying declarative, functional, and object-oriented programming styles are studied. Students write
+                programs emphasizing each of these techniques.
+            </p>
+            <strong>CSE 118 - Mobile Applications</strong> <br>
+            <p>Introduces programming and application development for mobile devices. Covers the SDK and main
+                programming platforms available on mobile devices, methodologies for developing native applications,
+                division of computation between the mobile platform and servers, and mobile-to-server communications.
+                Introduces platforms based on JavaScript and HTML5 for the development of applications that are portable
+                across platforms. Students develop components of applications, leading to fully functional applications
+                by the end of the course.
+            </p>
+            <strong>CSE 120 - Computer Architecture</strong> <br>
+            <p>Introduction to computer architecture including examples of current approaches and the effect of
+                technology and software. Computer performance evaluation, basic combinatorial and sequential digital
+                components, different instruction set architectures with a focus on the MIPS ISA and RISC paradigm.
+                Evolution of CPU microarchitecture from single-cycle to multi-cycle pipelines, with overview of
+                super-scalar, multiple-issue and VLIW. Memory system, cache, virtual memory and relationship between
+                memory and performance. Evolution of PC system architecture. May include advanced topics, such as
+                parallel processing, MIMD, and SIMD.
+            </p>
+            <strong>CSE 146 - Ethics & Algorithms</strong> <br>
+            <p>This course provides an introduction to data-driven and algorithmic decision making, and ethical
+                frameworks for evaluating automated systems. There will be an emphasis on algorithmic literacy, critical
+                analysis, and fundamental limitations of automated decision making. We will cover concepts including
+                predictive and causal modeling. We will discuss bias, fairness, interpretability, privacy, and
+                accountability. Finally we will discuss notions of autonomy and algorithmic auditing.
+            </p>
+        </div>
+
+        <!-- Fourth Year Classes -->
+        <div class="p-4 mb-4 text-dark rounded bg-light">
+            <h3 class="text-center">Year 4 - Senior</h3>
+            <hr>
+            <strong>CSE 3 - Personal Computer Concepts: Software and Hardware</strong> <br>
+            <p>Provides an introduction to computers. Personal computing is emphasized, and students are introduced to
+                word processing, spreadsheets, database management, graphics, and programming. Covers fundamentals of
+                computing and current and future uses of computer technology, PC hardware, Windows operating system,
+                applications software, networking and the Internet, and developments in the computer industry. Designed
+                for students with little or no experience using computers.
+            </p>
+            <strong>CSE 102 - Introduction to Analysis of Algorithms</strong> <br>
+            <p>Methods for the systematic construction and mathematical analysis of algorithms. Order notation, the RAM
+                model of computation, lower bounds, and recurrence relations are covered. The algorithm design
+                techniques include divide-and-conquer, branch and bound, and dynamic programming. Applications to
+                combinatorial, graph, string, and geometric algorithms.
+            </p>
+            <strong>CSE 130: Principles of Computer Systems Design </strong> <br>
+            <p>Covers the principles governing computer-systems design and complexity; familiarity with memory, storage,
+                and networking; concurrency and synchronization; layering (abstraction and modularity); naming;
+                client-server and virtualized system models; and performance. Requires significant programming projects
+                demonstrating mastery of these concepts.
+            </p>
+            <strong>CSE 140 - Artificial Intelligence</strong> <br>
+            <p>Introduction to the contemporary concepts and techniques of artificial intelligence, including any or all
+                of: machine perception and inference, machine learning, optimization problems, computational methods and
+                models of search, game playing and theorem proving. Emphasis may be on any formal method of perceiving,
+                learning, reasoning, and problem solving which proves to be effective. This includes both symbolic and
+                neural network approaches to artificial intelligence. Issues discussed include symbolic versus
+                nonsymbolic methods, local versus global methods, hierarchical organization and control, and brain
+                modeling versus engineering approaches. Lisp or Prolog may be introduced. Involves one major project or
+                regular programming assignments.</p>
+            <strong>CSE 180 - Database Systems I </strong> <br>
+            <p>Introduction to the concepts, approaches, tools, and methodology of database design. Covers the
+                entity-relationship model, the relational model, relational algebra, relational calculus, commercial
+                languages (such as SQL and QBE), functional dependencies, normal forms, and design theory. Other topics
+                may include knowledge-bases, constraint databases, and alternative database models.
+            </p>
+            <strong>CSE 183 - Web Applications</strong> <br>
+            <p>The World-Wde Web is one of the main mechanisms by which computer applications are delivered to users.
+                This course introduces the design of Web applications. Students learn the main technologies involved,
+                and build web applications as part of homework assignments and group class projects.
+            </p>
         </div>
 
         <!-- Acronym Footer -->
-        <div>
-            <section class="container rounded my-3 p-3 bg-dark text-white">
-                <div class="nav-scroller ">
-                    <nav class="nav d-flex justify-content-around">
-                        <p class="mb-0">CMPS = Computer Science</p>
-                        <p class="mb-0">CMPE = Computer Engineering</p>
-                        <p class="mb-0">CSE = Computer Science and Engineering</p>
+        <div class="p-3 text-white rounded bg-dark">
+            <div class="d-flex justify-content-around ">
+                <p class="mb-0">
+                    CMPS = Computer Science
+                </p>
 
-                    </nav>
-                </div>
-            </section>
+                <p class="mb-0">
+                    CMPE = Computer Engineering
+                </p>
+
+                <p class="mb-0">
+                    CSE = Computer Science and Engineering
+                </p>
+            </div>
+
         </div>
 
-    </div>
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+
+
 </body>
 
 </html>
